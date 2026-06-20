@@ -1,10 +1,4 @@
 <?php
-// ====================================================
-// KONEKSI DATABASE
-// Sesuaikan username/password dengan setting MySQL kamu
-// (default XAMPP/Laragon: user 'root', password kosong)
-// ====================================================
-
 $host     = "localhost";
 $user     = "root";
 $password = "";
