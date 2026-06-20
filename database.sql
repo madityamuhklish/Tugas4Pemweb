@@ -1,13 +1,6 @@
--- ====================================================
--- DATABASE: portofolio_db
--- Jalankan file ini di phpMyAdmin / MySQL untuk membuat
--- database dan tabel yang dibutuhkan.
--- ====================================================
-
 CREATE DATABASE IF NOT EXISTS portofolio_db;
 USE portofolio_db;
 
--- hapus tabel lama jika ada struktur yang berbeda/rusak
 DROP TABLE IF EXISTS projects;
 
 CREATE TABLE projects (
@@ -31,7 +24,6 @@ CREATE TABLE messages (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Contoh data awal (opsional, boleh dihapus)
 INSERT INTO projects (judul, deskripsi, teknologi, link_demo) VALUES
 ('Sistem Informasi Monitor Bansos', 'Aplikasi web untuk memonitor penyaluran bantuan sosial di tingkat kelurahan.', 'PHP, MySQL, Bootstrap', ''),
 ('Tournament Management SIOMAS', 'Sistem manajemen turnamen esports dengan fitur multi-role.', 'HTML, CSS, JavaScript', '');
